@@ -5,8 +5,7 @@ task << " Ruby"
 puts task
 =end
 
-task = "I'm"
-task.concat(" learning")
+task = "Learning"
 task.concat(" Ruby")
 puts task
 

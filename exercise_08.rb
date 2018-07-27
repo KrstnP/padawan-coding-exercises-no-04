@@ -1,14 +1,6 @@
-
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-numbers.reverse [1..11]
-puts numbers
-
-=begin
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-numbers.reverse!
-puts numbers
-=end
-
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-numbers.reverse_each {|x|}
-puts numbers
+[1, 3, 5, 7, 9].each do |i|
+  numbers.delete(i)
+end
+numbers.delete(6)
+puts numbers.reverse.inspect
